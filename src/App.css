@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+       url('/fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Bold.woff2') format('woff2'),
+       url('/fonts/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
 /* Global Reset */
 body,
 html {
@@ -9,10 +32,15 @@ html {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100vh; /* Full viewport height */
   background-size: cover;
   background-position: center;
   color: white;
+
+  /* Add Flexbox properties */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center main content vertically */
 }
 
 /* Dark Overlay */
@@ -26,18 +54,22 @@ html {
 }
 
 /* Header */
+/* Header */
 .header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  z-index: 10; /* Ensure the header is above the overlay */
+  position: absolute; /* Position the header at the top */
+  top: 0;
+  left: 0;
+  width: 95%; /* Full width */
+  padding: 20px; /* Add padding for spacing */
+  z-index: 10; /* Ensure it's above the overlay */
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between logo and button */
+  align-items: center; /* Align items vertically */
 }
 
 /* Logo */
 .logo {
-  height: 60px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
 }
 
 /* Coming Soon Button */
@@ -55,4 +87,81 @@ html {
 
 .coming-soon-btn:hover {
   background-color: #333; /* Darker shade on hover */
+}
+
+
+
+
+.main-content {
+  text-align: center; /* Center text inside */
+  z-index: 10; /* Ensure it's above the overlay */
+  width: 97%; /* Take up available space */
+  padding: 20px; /* Add padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* Main Heading */
+.main-heading {
+  font-size: 60px;
+  font-weight: 900; /* Use the boldest weight available */
+  margin-bottom: 20px;
+  line-height: 1.2;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Main Paragraph */
+.main-paragraph {
+  font-size: 18px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #e9e9e9;
+}
+
+/* Buttons Container */
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Get Notified Button */
+.get-notified-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #061924;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-notified-btn:hover {
+  background-color: #333;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #061924;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #f0f0f0;
 }

@@ -97,6 +97,22 @@ html {
   background-color: #333; /* Darker shade on hover */
 }
 
+/* Style for "First of its kind in Africa!" */
+.africa-text {
+  font-size: 1.5rem; /* Responsive font size */
+  font-weight: 500; /* Semi-bold font */
+  color: #ffffff; /* White color */
+  margin-top: 1rem; /* Add spacing above the text */
+  text-align: center; /* Center-align the text */
+  line-height: 1.4; /* Improve readability */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 640px) {
+  .africa-text {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+}
 
 
 

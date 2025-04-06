@@ -82,6 +82,7 @@ const LandingPage = () => {
             </motion.button>
           </div>
         </div>
+        <p className="africa-text">First of its kind in Africa!</p>
       </div>
 
       {/* Key Benefits Section */}

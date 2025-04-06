@@ -202,6 +202,7 @@ const LandingPage = () => {
 
       {/* Video Section */}
       <section className="video-section">
+        {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -220,6 +221,7 @@ const LandingPage = () => {
             like never before.
           </p>
         </motion.div>
+        {/* Video Container */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -232,16 +234,13 @@ const LandingPage = () => {
           }}
           className="video-container"
         >
-          <iframe
-            width="100%"
-            height="450"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Replace with your actual video URL
-            title="Nexr Demo Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="video-iframe"
-          ></iframe>
+          {/* Placeholder Text */}
+          <div className="video-placeholder">
+            <p className="placeholder-title">App preview coming soon</p>
+            <p className="placeholder-text">
+              We're working very hard to provide a preview as soon as possible.
+            </p>
+          </div>
         </motion.div>
       </section>
 

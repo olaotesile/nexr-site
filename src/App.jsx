@@ -99,7 +99,7 @@ const LandingPage = () => {
           }}
           className="section-title"
         >
-          <h3 className="gradient-text">Why Use Nextr?</h3>
+          <h3 className="gradient-text">Why Use Nexr?</h3>
         </motion.div>
         <div className="benefits-grid">
           {[1, 2, 3].map((index) => (

@@ -383,25 +383,32 @@ const LandingPage = () => {
       {/* Subscribe Section */}
       <section className="subscribe-section">
         <div className="subscribe-container">
+          {/* Title */}
           <h3 className="subscribe-title">
             Be First in Line When <span className="highlight">Nexr</span>{" "}
             Launches
           </h3>
+          {/* Subtitle */}
           <p className="subscribe-subtitle">
             Subscribe today and receive early access to Nexr. Stay ahead and
             take advantage of our innovative features before others do.
           </p>
+          {/* Form Card */}
           <div className="form-card">
+            {/* Email Label */}
             <label htmlFor="email" className="form-label">
               Email
             </label>
+            {/* Email Input */}
             <input
               type="email"
               id="email"
               placeholder="you@example.com"
               className="form-input"
             />
+            {/* Subscribe Button */}
             <button className="subscribe-button">Subscribe</button>
+            {/* Terms and Conditions */}
             <p className="terms">
               By subscribing, you agree to our{" "}
               <a href="#" className="link">

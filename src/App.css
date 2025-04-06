@@ -29,6 +29,14 @@ html {
   box-sizing: border-box;
 }
 
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element dimensions */
+}
+
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -56,15 +64,15 @@ html {
 /* Header */
 /* Header */
 .header {
-  position: absolute; /* Position the header at the top */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 95%; /* Full width */
-  padding: 20px; /* Add padding for spacing */
-  z-index: 10; /* Ensure it's above the overlay */
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space between logo and button */
-  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+  padding: 20px; /* Padding for spacing */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Logo */
@@ -93,15 +101,14 @@ html {
 
 
 .main-content {
-  text-align: center; /* Center text inside */
-  z-index: 10; /* Ensure it's above the overlay */
-  width: 97%; /* Take up available space */
-  padding: 20px; /* Add padding for spacing */
+  text-align: center;
+  z-index: 10;
+  width: 100%; /* Take up full available width */
+  padding: 20px; /* Padding for spacing */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 
@@ -313,7 +320,7 @@ html {
 
 /* Subscribe Section */
 .subscribe-section {
-  padding: 40px 20px;
+  padding: 60px 20px; /* Increased padding for better spacing */
   background-color: #061924;
   color: white;
 }
@@ -328,6 +335,11 @@ html {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth animation for hover effect */
+}
+
+.subscribe-title:hover {
+  transform: scale(1.02); /* Slight zoom effect */
 }
 
 .highlight {
@@ -335,62 +347,78 @@ html {
 }
 
 .subscribe-subtitle {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 18px; /* Slightly larger font size */
+  margin-bottom: 30px; /* More spacing below the subtitle */
+  line-height: 1.6; /* Improved readability */
 }
 
 .form-card {
   background-color: white;
   color: #061924;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+}
+
+.form-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 .form-label {
   display: block;
   font-size: 14px;
   margin-bottom: 10px;
+  font-weight: bold; /* Bold label for emphasis */
 }
 
 .form-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 90%;
+  padding: 12px; /* Increased padding for better touch target */
+  font-size: 16px; /* Larger font size for better readability */
+  border: 2px solid #ccc; /* Thicker border for better visibility */
+  border-radius: 8px; /* Rounded corners */
   margin-bottom: 20px;
+  transition: border-color 0.3s ease; /* Focus effect */
+}
+
+.form-input:focus {
+  border-color: #2196f3; /* Highlight border on focus */
+  outline: none; /* Remove default focus outline */
 }
 
 .subscribe-button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  width: 0%3;
+  padding: 12px;
+  font-size: 18px; /* Larger font size */
   font-weight: bold;
   color: white;
-  background-color: #2196f3;
+  background-color: #2196f3; /* Gradient background */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* Rounded corners */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease; /* Hover effects */
 }
 
 .subscribe-button:hover {
-  background-color: #1976d2;
+  transform: scale(1.05); /* Slight zoom effect */
+  background: linear-gradient(to right, #1976d2, #5e35b1); /* Darker gradient on hover */
 }
 
 .terms {
-  font-size: 12px;
-  margin-top: 10px;
+  font-size: 14px; /* Larger font size */
+  margin-top: 15px; /* More spacing above the terms */
 }
 
 .link {
   color: #2196f3;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .link:hover {
-  text-decoration: underline;
+  color: #1976d2; /* Darker blue on hover */
 }
 
 /* Footer */
